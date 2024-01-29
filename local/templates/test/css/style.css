@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+input {
+  padding: 15px 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+}
+
+button {
+  padding: 15px 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+}
+
+.header {
+  padding: 30px 0;
+  border-bottom: 1px solid #ccc;
+}
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__balance {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header__balance span {
+  font-weight: 500;
+}
+
+.summ-form {
+  margin: 100px auto;
+  padding: 30px 30px 40px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  width: -moz-max-content;
+  width: max-content;
+}
+.summ-form h2 {
+  margin-bottom: 20px;
+}
+.summ-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,9 @@
+/.htaccess
+/bitrix
+/upload
+*.log
+/*.sql
+*.xml
+/*.sql
+/.vscode-server
+/.cache
