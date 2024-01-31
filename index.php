@@ -12,11 +12,45 @@ $APPLICATION->SetTitle("ЛК");
 
 				<button>Вывести</button>
 			</form>
-		
+	</div>
+
+	<h2>историей операций </h2>
+	<div class="history">
+		<div class="history__head">
+			<div >Дата</div>
+			<div>Выведено</div>
+			<div>Остаток</div>
+		</div>
+		<div class="history__body">
+			<div class="history__item">
+				<div>22.01.2024</div>
+				<div>500 руб.</div>
+				<div>4500 руб.</div>
+			</div>
+			<div class="history__item">
+				<div>22.01.2024</div>
+				<div>500 руб.</div>
+				<div>4500 руб.</div>
+			</div>
+			<div class="history__item">
+				<div>22.01.2024</div>
+				<div>500 руб.</div>
+				<div>4500 руб.</div>
+			</div>
+			<div class="history__item">
+				<div>22.01.2024</div>
+				<div>500 руб.</div>
+				<div>4500 руб.</div>
+			</div>
+			<div class="history__item">
+				<div>22.01.2024</div>
+				<div>500 руб.</div>
+				<div>4500 руб.</div>
+			</div>
+		</div>
 
 
 	</div>
-
 
 
 </div>

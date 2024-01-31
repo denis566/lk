@@ -1,4 +1,5 @@
 <?php
+namespace SomePartner\MyBooksCatalog;
 if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)    die();
 IncludeTemplateLangFile(__FILE__);
 
@@ -16,7 +17,7 @@ use Bitrix\Main\Page\Asset;
 
 
 	<title><?$APPLICATION->ShowTitle()?></title>
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
@@ -34,8 +35,29 @@ use Bitrix\Main\Page\Asset;
 
 <header class="header">
     <div class="container header__content">
-        <div class="header__user">Пользователь: Admin</div>
-        <div class="header__balance">Текущий баланс: <span>1000 руб.</span></div>
+    <?
+$name = \Bitrix\Main\Engine\CurrentUser::get()->getFullName();
+$userID = \Bitrix\Main\Engine\CurrentUser::get()->GetID();  
+?>
+        <div class="header__user">Пользователь: <?=$name?></div>
+
+        <?
+        $result = BookTable::getList(array(
+            'select' => array('SUMM'),
+            'filter' => array('=USER_ID' => 1)
+        ));
+       
+        // print_r($result);
+        // if ($result->isSuccess())
+        // {
+        //  $id = $result->getId();
+        // $summ = $result->getSumm();
+
+        $rows = $result->fetchAll();
+       
+        // }
+        ?>
+        <div class="header__balance">Текущий баланс: <span><?=$rows['0']['SUMM'];?> руб.</span></div>
     </div>
 
 
