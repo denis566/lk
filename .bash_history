@@ -40,3 +40,19 @@ git push -u origin main
 git config --get remote.origin.url
 ssh-keygen
 git push -u origin main
+git status
+git add .
+git commit -m "added all"
+git push
+git status
+git add local
+git status
+git restore
+git rese
+git reset
+git status
+git add local
+git commit -m "local"
+git push
+git status
+"git commit -a
